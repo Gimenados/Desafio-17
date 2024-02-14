@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalCost = selectedMenuItems.reduce((total, item) => total + item.price, 0);
 
 
-    //Utilizamos el método fetch, el código realiza una solicitud POST al servidor del restaurante con los detalles del pedido en formato JSON.
+    // Utilizamos el método fetch, el código realiza una solicitud POST al servidor del restaurante con los detalles del pedido en formato JSON.
     fetch('/api/realizar-pedido', {
         method: 'POST',
         headers: {
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(error => {
         console.error('Error al enviar el pedido:', error);
     });
+    
 
     // const confirmationMessage = `PEDIDO CONFIRMADO:\n\n${JSON.stringify(orderDetails, null, 2)}\n\nCOSTO TOTAL: $${totalCost.toFixed(2)}`;
     const confirmationMessage = `PEDIDO CONFIRMADO:\n\nNombre: ${orderDetails.name}\nDirección: ${orderDetails.address}\nTeléfono: ${orderDetails.phone}\nCorreo electrónico: ${orderDetails.email}\n\nCOSTO TOTAL: $${totalCost.toFixed(2)}`;
