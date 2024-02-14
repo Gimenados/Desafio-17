@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurante</title>
+</head>
+<body>
+
+    <header>
+        <h1>Pedido de Comida en Línea</h1>
+    </header>
+
+    <!-- Menu de comida -->
+
+    <section id="menu" class="containerMenu">
+        <h2>Menú</h2>
+        <ul id="menuList">
+            <li data-id="1" data-name="Hamburguesa" data-price="10.99"> <!-- Data atributos para poder almacenar informacion a casa elemento del objeto creado -->
+                <img src="https://i.pinimg.com/564x/eb/cb/c6/ebcbc6aaa9deca9d6efc1efc93b66945.jpg" alt="Hamburguesa">
+                <p>Hamburguesas</p>
+                <span>$10,99</span>
+                <button>Comprar</button>
+            </li>
+            <li data-id="2" data-name="Pizza" data-price="12.99">
+                <img src="https://i.pinimg.com/564x/b1/4e/96/b14e967be4d2d4d121ec19d6de13ea7c.jpg" alt="Pizza">
+                <p>Pizza</p>
+                <span>$12,99</span>
+                <button>Comprar</button>
+            </li>
+            <li data-id="3" data-name="Ensalada" data-price="6.99">
+                <img src="https://i.pinimg.com/564x/65/e4/ff/65e4ff0a5ddd21496909b6ecf78f40f5.jpg" alt="Ensalada">
+                <p>Ensalada</p>
+                <span>$6.99</span>
+                <button>Comprar</button>
+            </li>
+            <li data-id="4" data-name="Empanadas" data-price="40.99">
+                <img src="https://i.pinimg.com/564x/73/46/39/7346398b6907908b81ff92906e7f9676.jpg" alt="Empanadas">
+                <p>Empanadas</p>
+                <span>$40,99</span>
+                <button>Comprar</button>
+            </li>
+            <li data-id="5" data-name="Lasagna" data-price="78.99">
+                <img src="https://i.pinimg.com/564x/e3/0b/ee/e30bee4031bcfb9961b0a5b6024bbb43.jpg" alt="Lasagna">
+                <p>Lasagna</p>
+                <span>$78,99</span>
+                <button>Comprar</button>
+            </li>
+            <li data-id="6" data-name="Milanesa" data-price="90.89">
+                <img src="https://i.pinimg.com/564x/52/99/25/529925dc3221643cf3c2ad7f6dda7f30.jpg" alt="Milanesas">
+                <p>Milanesas</p>
+                <span>$90,89</span>
+                <button>Comprar</button>
+            </li>
+            <li data-id="7" data-name="Canelones" data-price="65.59">
+                <img src="https://i.pinimg.com/564x/2d/9b/d6/2d9bd630eb3cce45c6558054e0767716.jpg" alt="Canelones">
+                <p>Canelones</p>
+                <span>$65,59</span>
+                <button>Comprar</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Formulario de pedido  -->
+
+    <section id="containerForm" class="containerForm">
+        <form id="sectionForm" class="sectionForm">
+            <h2>Realizar Pedido</h2>
+            <div class="formGroup">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="formGroup">
+                <label for="address">Dirección de entrega</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="formGroup">
+                <label for="phone">Número de teléfono</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="formGroup">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="formGroup">
+                <label for="items">Artículos del menú</label>
+                <select id="items" name="items" multiple required>
+                    <option value="1">Hamburguesa</option>
+                    <option value="2">Pizza</option>
+                    <option value="3">Ensalada</option>
+                    <option value="4">Empanadas</option>
+                    <option value="5">Lasagna</option>
+                    <option value="6">Milanesas</option>
+                    <option value="7">Canelones</option>
+                </select>
+            </div>
+
+            <div class="formGroup">
+                <label for="comments">Comentarios adicionales</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+
+            <div class="containerButton">
+                <button type="submit">Enviar Pedido</button>
+            </div>
+        </form>
+        <div class="formImg">
+          <img src="https://www.kansasgrillandbar.com.ar/gfx/contact_img.png" alt="">
+        </div>
+    </section>
+
+    <section class="containerImg">
+        <p>Celebrando la buena vida, a través de comida, todo el año.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pedido de Comida en Línea</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

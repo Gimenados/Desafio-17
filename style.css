@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+h1 {
+    color: white;
+    background-color: black;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    margin: 0px !important;
+    padding: 0.5rem 0px;
+}
+
+/* MENU */
+
+h2 {
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.containerMenu {
+    background-image: url(https://www.kansasgrillandbar.com.ar/gfx/tmp/slide_04b.jpg);
+    background-position: 50% 50% !important;
+    background-attachment: fixed;
+    /* transform: translate3d(0px, -79.0625px, 0px); */
+    padding: 1rem 0rem;
+}
+
+.menuList {
+    padding-left: 0px !important;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 0.5rem 0.5rem 0rem !important;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(25, 18, 3, 0.615);
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+ul li img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1rem;
+}
+
+ul li p {
+    color: aliceblue;
+    font-size: 1rem !important;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+ul li span {
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+ul li button {
+    background-color: rgb(69, 175, 119);
+    padding: 0.4rem 0.1rem;
+    font-weight: bold;
+}
+
+/* FORMULARIO DE PEDIDO */
+
+.containerForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    background-color: #E9E4CD;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.sectionForm {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+    width: 50vw;
+}
+
+.sectionForm h2 {
+    color: black !important;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.formGroup label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #373737;
+}
+
+.formGroup select, .formGroup textarea, .formGroup input {
+    width: 60%;
+    height: auto;
+    padding: 5px;
+    font-size: 0.9rem !important;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #7d7c7c;
+    border: 1px solid #DCD7C1;
+}
+
+.containerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerButton button {
+    background-color: rgb(85, 113, 159);
+    width: 30%;
+    text-align: center;
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #E9E4CD;
+}
+
+option:hover {
+    cursor: pointer;
+    background-color: #979797;
+    font-weight: 900;
+    color: black;
+}
+
+/* CONTAINER IMG */
+
+.containerImg {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    background-image: url(https://www.kansasgrillandbar.com.ar/gfx/tmp/slide_04b.jpg);
+    background-position: 50% 50% !important;
+    background-attachment: fixed;
+}
+
+.containerImg p {
+    color: #E9E4CD;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: azure;
+    padding: 0.5rem;
+}
+
+/* MEDIAQUERY  */
+
+@media screen and (max-width: 930px) {
+
+    * {
+        font-size: 1.2rem;
+    }
+
+    ul {
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+}
+
+    .containerForm {
+       flex-direction: column;
+}
+
+    .formImg img {
+        width: 100%;
+        padding-top: 1.5rem;
+    }
+
+    .sectionForm {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    ul li {
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .sectionForm {
+        width: 75vw !important;
+    }
+
+    .sectionForm h2 {
+        width: 106% !important;
+        font-size: 1.4rem !important;
+        padding-bottom: 1.5rem;
+    }
+
+}
