@@ -22,6 +22,7 @@ h2 {
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -50,7 +51,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(25, 18, 3, 0.615);
+    background-color: rgb(25 18 3 / 27%);
     margin: 0.5rem;
     padding: 0.5rem;
 }
